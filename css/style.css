@@ -97,6 +97,15 @@ a {
                 font: 18px/1 'arial';
                 color: #fff;
                 letter-spacing: 2px; }
+            #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article:nth-of-type(2) {
+              width: 65%;
+              height: 100%; }
+              #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article:nth-of-type(2) .slide1 {
+                width: 55%;
+                height: 90%; }
+              #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article:nth-of-type(2) .slide2, #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article:nth-of-type(2) .slide3 {
+                width: 5%;
+                height: 90%; }
         #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner #footer {
           width: 100%;
           height: 5%;

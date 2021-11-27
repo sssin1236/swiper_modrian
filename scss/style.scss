@@ -112,6 +112,18 @@
                                     letter-spacing: 2px;
                                 }
                             }
+
+                            &:nth-of-type(2){
+                                width: 65%; height: 100%;
+
+                                .slide1{
+                                    width: 55%; height: 90%;
+                                }
+
+                                .slide2, .slide3{
+                                    width: 5%; height: 90%;
+                                }
+                            }
                         }
                     }
                     
