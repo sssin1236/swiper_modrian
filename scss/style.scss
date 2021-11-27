@@ -116,12 +116,49 @@
                             &:nth-of-type(2){
                                 width: 65%; height: 100%;
 
-                                .slide1{
-                                    width: 55%; height: 90%;
+                                &::after{
+                                    content: ''; display: block; clear: both;
+                                }
+
+                                .slide-wrap{
+                                    float: left;
+                                    width: 70%; height: 90%;
+                                    overflow: hidden;
+                                    border-right: 3px solid #111;
+
+                                    .slide1{
+                                        width: calc(101% * 3); height: 100%;
+                                        border-right: 3px solid #111;
+
+                                        &::after{
+                                            content: ''; display: block; clear: both;
+                                        }
+    
+                                        .back{
+                                            width: calc(100% / 3); height: 100%;
+                                            float: left;
+                                            position: relative;
+
+                                            &::after{
+                                                content: '';
+                                                display: block;
+                                                width: 3px; height: 100%;
+                                                background: #111;
+                                                position: absolute; 
+                                                top: 0; left: 50%;
+                                                margin-left: -1px;
+                                            }
+
+                                            &[data-index="1"]{
+                                                background: linear-gradient(90deg, #131ca2 50%, #ffc72e 50%);
+                                            }
+                                        }
+                                    }
                                 }
 
                                 .slide2, .slide3{
-                                    width: 5%; height: 90%;
+                                    float: left;
+                                    width: 15%; height: 90%;
                                 }
                             }
                         }
