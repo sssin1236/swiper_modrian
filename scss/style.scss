@@ -152,7 +152,15 @@
                                             &[data-index="1"]{
                                                 background: linear-gradient(90deg, #131ca2 50%, #ffc72e 50%);
                                             }
-                                        }
+
+                                            &[data-index="2"]{
+                                                background: linear-gradient(90deg, #ffc72e 50%, #d40920 50%);
+                                            }
+
+                                            &[data-index="3"]{
+                                                background: linear-gradient(90deg, #d40920 50%, #131ca2 50%);
+                                            }
+                                        }#
                                     }
                                 }
 
