@@ -160,7 +160,12 @@
                                             &[data-index="3"]{
                                                 background: linear-gradient(90deg, #d40920 50%, #131ca2 50%);
                                             }
-                                        }#
+
+                                            img{
+                                                width: 100%; height: 100%;
+                                                object-fit: cover;
+                                            }
+                                        }
                                     }
                                 }
 
