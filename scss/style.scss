@@ -173,6 +173,11 @@
                                 .slide2, .slide3{
                                     float: left;
                                     width: 15%; height: 85%;
+                                    overflow: hidden;
+                                    
+                                    .title{
+                                        width: calc(100% * 3); height: 100%;
+                                    }
                                 }
 
                                 .btn{
