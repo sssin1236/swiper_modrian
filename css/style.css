@@ -144,15 +144,18 @@ a {
                       height: 100%;
                       object-fit: cover;
                       display: none; }
-              #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article:nth-of-type(2) .slide2, #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article:nth-of-type(2) .slide3 {
+              #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article:nth-of-type(2) .slide2 {
                 float: left;
                 width: 15%;
                 height: 85%;
                 overflow: hidden; }
-                #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article:nth-of-type(2) .slide2 .title, #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article:nth-of-type(2) .slide3 .title {
+                #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article:nth-of-type(2) .slide2 .title {
                   width: calc(100% * 3);
-                  height: 100%;
-                  transform: rotate(90deg); }
+                  height: 100%; }
+              #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article:nth-of-type(2) .slid3 {
+                float: left;
+                width: 15%;
+                height: 85%; }
               #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article:nth-of-type(2) .btn {
                 display: block;
                 width: 70%;
