@@ -155,7 +155,8 @@ a {
               #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article:nth-of-type(2) .slid3 {
                 float: left;
                 width: 15%;
-                height: 85%; }
+                height: 85%;
+                overflow: hidden; }
               #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article:nth-of-type(2) .btn {
                 display: block;
                 width: 70%;
