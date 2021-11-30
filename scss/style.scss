@@ -273,6 +273,17 @@
                                     border-top: 3px solid #111;
                                     position: relative;
 
+                                    span{
+                                        font: 15px/1 'arial';
+                                        color: #fff;
+                                        letter-spacing: 3px;
+                                        position: absolute;
+                                        top: 50%; left: 50%;
+                                        transform: translate(-50%, -50%);
+                                        opacity: 0;
+                                        transition: 0.5s;
+                                    }
+
                                     &::before{
                                         content: '';
                                         display: block;
