@@ -199,10 +199,38 @@
                                 }
 
                                 .prev{
+                                    display: block;
+                                    width: 15%; height: 15%;
+                                    float: left;
+                                    background: #131ca2;
+                                    border-top: 3px solid #111;
+                                    position: relative;
                                     border-right: 3px solid #111;
+
+                                    &::before{
+                                        content: '';
+                                        display: block;
+                                        width: 50px; height: 2px;
+                                        background: #fff;
+                                        position: absolute;
+                                        top: 50%; left: 50%;
+                                        transform: translate(-50%,-50%) rotate(30deg);
+                                        transform-origin: left center;
+                                    }
+
+                                    &::after{
+                                        content: '';
+                                        display: block;
+                                        width: 50px; height: 2px;
+                                        background: #fff;
+                                        position: absolute;
+                                        top: 50%; left: 50%;
+                                        transform: translate(-50%,-50%) rotate(-30deg);
+                                        transform-origin: left center;
+                                    }
                                 }
 
-                                .prev, .next{
+                                .next{
                                     display: block;
                                     width: 15%; height: 15%;
                                     float: left;
@@ -217,7 +245,8 @@
                                         background: #fff;
                                         position: absolute;
                                         top: 50%; left: 50%;
-                                        transform: translate(-50%,-50%);
+                                        transform: translate(-50%,-50%) rotate(30deg);
+                                        transform-origin: right center;
                                     }
 
                                     &::after{
@@ -227,7 +256,8 @@
                                         background: #fff;
                                         position: absolute;
                                         top: 50%; left: 50%;
-                                        transform: translate(-50%,-50%);
+                                        transform: translate(-50%,-50%) rotate(-30deg);
+                                        transform-origin: right center;
                                     }
                                 }
                             }
