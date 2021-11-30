@@ -178,13 +178,25 @@
                                     
                                     .title{
                                         width: calc(100% * 3); height: 100%;
+
+                                        li{
+                                            width: calc(100% / 3); height: 100%;
+                                        }
                                     }
                                 }
 
-                                .slid3{
+                                .slide3{
                                     float: left;
                                     width: 15%; height: 85%;
                                     overflow: hidden;
+
+                                    .sub_title{
+                                        width: calc(100% * 3); height: 100%;
+
+                                        li{
+                                            width: calc(100% / 3); height: 100%;
+                                        }
+                                    }
                                 }
 
                                 .btn{
@@ -293,6 +305,7 @@
                                         top: 50%; left: 50%;
                                         transform: translate(-50%, -50%) rotate(-30deg);
                                         transform-origin: right center;
+                                        transition: 0.5s;
                                     }
 
                                     &::after{
@@ -304,6 +317,7 @@
                                         top: 50%; left: 50%;
                                         transform: translate(-50%, -50%) rotate(30deg);
                                         transform-origin: right center;
+                                        transition: 0.5s;
                                     }
 
                                     &:hover{
