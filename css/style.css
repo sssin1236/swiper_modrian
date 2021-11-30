@@ -148,6 +148,7 @@ a {
                 float: left;
                 width: 15%;
                 height: 85%;
+                border-right: 3px solid #111;
                 overflow: hidden; }
                 #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article:nth-of-type(2) .slide2 .title {
                   width: calc(100% * 3);
@@ -180,25 +181,26 @@ a {
                 #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article:nth-of-type(2) .prev::before {
                   content: '';
                   display: block;
-                  width: 50px;
-                  height: 2px;
-                  background: #fff;
+                  width: 30px;
+                  height: 30px;
+                  border-left: 1px solid #fff;
+                  border-bottom: 1px solid #fff;
                   position: absolute;
                   top: 50%;
                   left: 50%;
-                  transform: translate(-50%, -50%) rotate(30deg);
-                  transform-origin: left center; }
+                  transform: translate(-50%, -50%) rotate(45deg); }
                 #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article:nth-of-type(2) .prev::after {
                   content: '';
                   display: block;
-                  width: 50px;
-                  height: 2px;
-                  background: #fff;
+                  width: 30px;
+                  height: 30px;
+                  border-right: 1px solid #fff;
+                  border-top: 1px solid #fff;
                   position: absolute;
                   top: 50%;
                   left: 50%;
-                  transform: translate(-50%, -50%) rotate(-30deg);
-                  transform-origin: left center; }
+                  transform: translate(-50%, -50%) rotate(45deg);
+                  opacity: 0; }
               #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article:nth-of-type(2) .next {
                 display: block;
                 width: 15%;
