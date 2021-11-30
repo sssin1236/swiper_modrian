@@ -188,6 +188,16 @@ a {
                   top: 50%;
                   left: 50%;
                   transform: translate(-50%, -50%); }
+                #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article:nth-of-type(2) .prev::after, #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article:nth-of-type(2) .next::after {
+                  content: '';
+                  display: block;
+                  width: 50px;
+                  height: 2px;
+                  background: #fff;
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%); }
         #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner #footer {
           width: 100%;
           height: 10%;
