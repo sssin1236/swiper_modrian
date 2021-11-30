@@ -208,27 +208,60 @@
                                     position: relative;
                                     border-right: 3px solid #111;
 
+                                    span{
+                                        font: 15px/1 'arial';
+                                        color: #fff;
+                                        letter-spacing: 3px;
+                                        position: absolute;
+                                        top: 50%; left: 50%;
+                                        transform: translate(-50%, -50%);
+                                        opacity: 0;
+                                        transition: 0.5s;
+                                    }
+
                                     &::before{
                                         content: '';
                                         display: block;
-                                        width: 30px; height: 30px;
-                                        border-left: 1px solid #fff;
-                                        border-bottom: 1px solid #fff;
+                                        width: 30px; height: 1px;
+                                        background: #fff;
                                         position: absolute;
                                         top: 50%; left: 50%;
-                                        transform: translate(-50%, -50%) rotate(45deg);
+                                        transform: translate(-50%, -50%) rotate(-30deg);
+                                        transform-origin: left center;
+                                        transition: 0.5s;
                                     }
 
                                     &::after{
                                         content: '';
                                         display: block;
-                                        width: 30px; height: 30px;
-                                        border-right: 1px solid #fff;
-                                        border-top: 1px solid #fff;
+                                        width: 30px; height: 1px;
+                                        background: #fff;
                                         position: absolute;
                                         top: 50%; left: 50%;
-                                        transform: translate(-50%, -50%) rotate(45deg);
-                                        opacity: 0;
+                                        transform: translate(-50%, -50%) rotate(30deg);
+                                        transform-origin: left center;
+                                        transition: 0.5s;
+                                    }
+
+                                    &:hover{
+                                        span{
+                                            opacity: 1;
+                                            transition: 1s 0.5s;
+                                        }
+
+                                        &::before{
+                                            transform: translate(-50%, -50%) rotate(0deg);
+                                            top: 20%;
+                                            opacity: 0;
+                                            transition: transform 0.5s, top 0.5s 0.5s, opacity 0.7s 0.5s;
+                                        }
+
+                                        &::after{
+                                            transform: translate(-50%, -50%) rotate(0deg);
+                                            top: 80%;
+                                            opacity: 0;
+                                            transition: transform 0.5s, top 0.5s 0.5s, opacity 0.7s 0.5s;
+                                        }
                                     }
                                 }
 
@@ -243,24 +276,46 @@
                                     &::before{
                                         content: '';
                                         display: block;
-                                        width: 50px; height: 2px;
+                                        width: 30px; height: 1px;
                                         background: #fff;
                                         position: absolute;
                                         top: 50%; left: 50%;
-                                        transform: translate(-50%,-50%) rotate(30deg);
+                                        transform: translate(-50%, -50%) rotate(-30deg);
                                         transform-origin: right center;
                                     }
 
                                     &::after{
                                         content: '';
                                         display: block;
-                                        width: 50px; height: 2px;
+                                        width: 30px; height: 1px;
                                         background: #fff;
                                         position: absolute;
                                         top: 50%; left: 50%;
-                                        transform: translate(-50%,-50%) rotate(-30deg);
+                                        transform: translate(-50%, -50%) rotate(30deg);
                                         transform-origin: right center;
                                     }
+
+                                    &:hover{
+                                        span{
+                                            opacity: 1;
+                                            transition: 1s 0.5s;
+                                        }
+
+                                        &::before{
+                                            transform: translate(-50%, -50%) rotate(0deg);
+                                            top: 20%;
+                                            opacity: 0;
+                                            transition: transform 0.5s, top 0.5s 0.5s, opacity 0.7s 0.5s;
+                                        }
+
+                                        &::after{
+                                            transform: translate(-50%, -50%) rotate(0deg);
+                                            top: 80%;
+                                            opacity: 0;
+                                            transition: transform 0.5s, top 0.5s 0.5s, opacity 0.7s 0.5s;
+                                        }
+                                    }
+                                    
                                 }
                             }
                         }
