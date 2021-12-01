@@ -51,14 +51,28 @@ function activation(){
     bgs[i].classList.add("on");
 }
 
-const slide1 = document.querySelector(".slide1");
-const back = slide1.querySelectorAll("li");
-const btn_prev = document.querySelector(".prev");
-const btn_next = document.querySelector(".next");
+const slide1 = $(".slide1");
+const back = $(".slide1>li");
+const btn_prev = $(".prev");
+const btn_next = $(".next");
 
+// btn_next.addEventListener("click", e=>{
+//     e.preventDefault();
+//     console.log("HELLO");
 
-btn_next.addEventListener("click", (e)=>{
+//     // new Anim(slide1, {
+//     //     prop: "left",
+//     //     value: "-200%",
+//     //     duration: 500,
+//     //     callback: ()=>{
+//     //         slide1.style.left = "-100%";
+//     //         slide1.append(slide1.firstElementChild);
+//     //     }
+//     // })
+// })
+
+btn_next.on("click", function(e){
     e.preventDefault();
 
-    
+
 })

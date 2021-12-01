@@ -130,7 +130,8 @@ a {
                   width: calc(100% * 3);
                   height: 100%;
                   border-right: 3px solid #111;
-                  margin-left: -100%; }
+                  position: relative;
+                  left: 0%; }
                   #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article:nth-of-type(2) .slide-wrap .slide1::after {
                     content: '';
                     display: block;
@@ -227,6 +228,7 @@ a {
                 background: #131ca2;
                 border-top: 3px solid #111;
                 position: relative;
+                z-index: 3;
                 border-right: 3px solid #111; }
                 #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article:nth-of-type(2) .prev span {
                   font: 18px/1 'Genos';

@@ -147,7 +147,8 @@ font-family: 'Syncopate', sans-serif;
                                     .slide1{
                                         width: calc(100% * 3); height: 100%;
                                         border-right: 3px solid #111;
-                                        margin-left: -100%;
+                                        position: relative;
+                                        left: 0%;
 
                                         &::after{
                                             content: ''; display: block; clear: both;
@@ -263,6 +264,7 @@ font-family: 'Syncopate', sans-serif;
                                     background: #131ca2;
                                     border-top: 3px solid #111;
                                     position: relative;
+                                    z-index: 3;
                                     border-right: 3px solid #111;
 
                                     span{
