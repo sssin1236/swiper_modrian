@@ -69,6 +69,7 @@ btn_prev.on("click", function(e){
 
         act_prev(slide1);
         act_prev2(slide3);
+        act_next2(slide2);
     }
     
 })
@@ -81,6 +82,7 @@ btn_next.on("click", function(e){
 
         act_next(slide1);
         act_next2(slide3);
+        act_prev2(slide2);
     }   
 })
 
@@ -101,7 +103,7 @@ function act_next(el){
 }
 
 function act_prev2(el){
-    el.children("ul").animate({ top : "0%"}, speed, function(){
+    el.children("ul").animate({ top : "0%"}, speed, "easeOutQuint", function(){
         $(this).css({ top: "-100%"});
         $(this).children("li").last().prependTo(this);
         enableClick = true;
@@ -109,7 +111,7 @@ function act_prev2(el){
 }
 
 function act_next2(el){
-    el.children("ul").animate({ top : "-200%"}, speed, function(){
+    el.children("ul").animate({ top : "-200%"}, speed, "easeOutQuint", function(){
         $(this).css({ top: "-100%"});
         $(this).children("li").first().appendTo(this);
         enableClick = true;
