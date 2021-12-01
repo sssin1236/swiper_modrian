@@ -101,7 +101,7 @@ font-family: 'Syncopate', sans-serif;
                                     text-align: left;
 
                                     span{
-                                        font: 20px/1 'arial';
+                                        font: 22px/1 'Abel';
                                         color: #333;
                                     }
 
@@ -113,7 +113,7 @@ font-family: 'Syncopate', sans-serif;
 
                                     p{
                                         width: 450px;
-                                        font: 16px/1.5 'arial';
+                                        font: 18px/1.5 'Abel';
                                         color: #444;
                                     }
                                 }
@@ -147,6 +147,7 @@ font-family: 'Syncopate', sans-serif;
                                     .slide1{
                                         width: calc(100% * 3); height: 100%;
                                         border-right: 3px solid #111;
+                                        margin-left: -100%;
 
                                         &::after{
                                             content: ''; display: block; clear: both;

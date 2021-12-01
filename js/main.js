@@ -50,3 +50,15 @@ function activation(){
     }
     bgs[i].classList.add("on");
 }
+
+const slide1 = document.querySelector(".slide1");
+const back = slide1.querySelectorAll("li");
+const btn_prev = document.querySelector(".prev");
+const btn_next = document.querySelector(".next");
+
+
+btn_next.addEventListener("click", (e)=>{
+    e.preventDefault();
+
+    
+})
