@@ -177,10 +177,10 @@
                                     overflow: hidden;
                                     
                                     .title{
-                                        width: calc(100% * 3); height: 100%;
+                                        width: 100%; height: calc(100% * 3);
 
                                         li{
-                                            width: calc(100% / 3); height: 100%;
+                                            width: 100%; height: calc(100% / 3);
                                         }
                                     }
                                 }
@@ -191,10 +191,10 @@
                                     overflow: hidden;
 
                                     .sub_title{
-                                        width: calc(100% * 3); height: 100%;
+                                        width: 100%; height: calc(100% * 3);
 
                                         li{
-                                            width: calc(100% / 3); height: 100%;
+                                            width: 100%; height: calc(100% / 3);
                                         }
                                     }
                                 }
