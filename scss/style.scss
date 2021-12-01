@@ -1,4 +1,13 @@
 @charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Dosis:wght@200&family=Genos:wght@300&family=Jura:wght@300&family=Montserrat:ital,wght@1,200&family=Syncopate&display=swap');
+/*
+font-family: 'Abel', sans-serif;
+font-family: 'Dosis', sans-serif;
+font-family: 'Genos', sans-serif;
+font-family: 'Jura', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Syncopate', sans-serif;
+*/
 @import "reset.scss";
 
 
@@ -56,10 +65,19 @@
             }
 
             &[data-swiper-slide-index="0"]{
+                &.swiper-slide-active .inner{
+                    opacity: 1;
+                }
+
                 .inner{
                     padding: 0;
                     border: 3px solid #111;
-
+                    width: 100%; height: 100%;
+                    opacity: 0.5;
+                    z-index: 1;
+                    transition: opacity 1s;
+                    
+                    
                     .wrap{
                         width: 100%; height: 90%;
                         position: relative;
@@ -107,9 +125,9 @@
                                     background: #d40920;
                                     border-top: 3px solid #111;
                                     text-align: center;
-                                    font: 18px/1 'arial';
+                                    font: bold 22px/1 'Dosis';
                                     color: #fff;
-                                    letter-spacing: 2px;
+                                    letter-spacing: 3px;
                                 }
                             }
 
@@ -181,6 +199,19 @@
 
                                         li{
                                             width: 100%; height: calc(100% / 3);
+                                            position: relative;
+
+                                            span{
+                                                display: inline-block;
+                                                width: 400px;
+                                                position: absolute;
+                                                top: 50%; left: 50%;
+                                                transform: translate(-50%, -50%) rotate(-90deg);
+                                                font: bold 20px/1 'Genos';
+                                                color: #111;
+                                                text-align: center;
+                                                letter-spacing: 15px;
+                                            }
                                         }
                                     }
                                 }
@@ -195,6 +226,19 @@
 
                                         li{
                                             width: 100%; height: calc(100% / 3);
+                                            position: relative;
+
+                                            span{
+                                                display: inline-block;
+                                                width: 400px;
+                                                position: absolute;
+                                                top: 50%; left: 50%;
+                                                transform: translate(-50%, -50%) rotate(-90deg);
+                                                font: bold 18px/1 'Genos';
+                                                color: #333;
+                                                text-align: center;
+                                                letter-spacing: 10px;
+                                            }
                                         }
                                     }
                                 }
@@ -206,9 +250,9 @@
                                     float: left;
                                     padding: 50px 0;
                                     text-align: center;
-                                    font: 18px/1 'arial';
+                                    font: bold 22px/1 'Dosis';
                                     color: #fff;
-                                    letter-spacing: 2px;
+                                    letter-spacing: 3px;
                                 }
 
                                 .prev{
@@ -221,7 +265,7 @@
                                     border-right: 3px solid #111;
 
                                     span{
-                                        font: 15px/1 'arial';
+                                        font: 18px/1 'Genos';
                                         color: #fff;
                                         letter-spacing: 3px;
                                         position: absolute;
@@ -286,7 +330,7 @@
                                     position: relative;
 
                                     span{
-                                        font: 15px/1 'arial';
+                                        font: 18px/1 'Genos';
                                         color: #fff;
                                         letter-spacing: 3px;
                                         position: absolute;
@@ -303,7 +347,7 @@
                                         background: #fff;
                                         position: absolute;
                                         top: 50%; left: 50%;
-                                        transform: translate(-50%, -50%) rotate(-30deg);
+                                        transform: translate(-50%, -50%) rotate(30deg);
                                         transform-origin: right center;
                                         transition: 0.5s;
                                     }
@@ -315,7 +359,7 @@
                                         background: #fff;
                                         position: absolute;
                                         top: 50%; left: 50%;
-                                        transform: translate(-50%, -50%) rotate(30deg);
+                                        transform: translate(-50%, -50%) rotate(-30deg);
                                         transform-origin: right center;
                                         transition: 0.5s;
                                     }
