@@ -148,7 +148,7 @@ font-family: 'Syncopate', sans-serif;
                                         width: calc(100% * 3); height: 100%;
                                         border-right: 3px solid #111;
                                         position: relative;
-                                        left: 0%;
+                                        left: -100%;
 
                                         &::after{
                                             content: ''; display: block; clear: both;

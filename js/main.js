@@ -51,31 +51,48 @@ function activation(){
     bgs[i].classList.add("on");
 }
 
-const slide1 = $(".slide1");
-const back = $(".slide1>li");
+
+const slide1 = $(".slide-wrap");
 const btn_prev = $(".prev");
 const btn_next = $(".next");
+let speed = 1000;
+let enableClick = true;
 
-// btn_next.addEventListener("click", e=>{
-//     e.preventDefault();
-//     console.log("HELLO");
+// $(".sldie1 li").last().prependTo(".slide1");
 
-//     // new Anim(slide1, {
-//     //     prop: "left",
-//     //     value: "-200%",
-//     //     duration: 500,
-//     //     callback: ()=>{
-//     //         slide1.style.left = "-100%";
-//     //         slide1.append(slide1.firstElementChild);
-//     //     }
-//     // })
-// })
+btn_prev.on("click", function(e){
+    e.preventDefault();
+
+    if(enableClick){
+        enableClick = false;
+
+        act_prev(slide1);
+    }
+    
+})
 
 btn_next.on("click", function(e){
     e.preventDefault();
 
-    slide1.animate({ left : "-200%"}, 1000, function(){
-        slide1.css({ left: "-100%"});
-        back.first().appendTo(slide1);
-    });
+    if(enableClick){
+        enableClick = false;
+
+        act_next(slide1);
+    }   
 })
+
+function act_prev(el){
+    el.children("ul").animate({ left : "0%"}, speed, function(){
+        $(this).css({ left: "-100%"});
+        $(this).children("li").last().prependTo(this);
+        enableClick = true;
+    });
+}
+
+function act_next(el){
+    el.children("ul").animate({ left : "-200%"}, speed, function(){
+        $(this).css({ left: "-100%"});
+        $(this).children("li").first().appendTo(this);
+        enableClick = true;
+    });
+}
