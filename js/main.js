@@ -74,5 +74,8 @@ const btn_next = $(".next");
 btn_next.on("click", function(e){
     e.preventDefault();
 
-
+    slide1.animate({ left : "-200%"}, 1000, function(){
+        slide1.css({ left: "-100%"});
+        back.first().appendTo(slide1);
+    });
 })
