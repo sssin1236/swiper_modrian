@@ -53,12 +53,13 @@ function activation(){
 
 
 const slide1 = $(".slide-wrap");
+const slide2 = $(".slide2");
+const slide3 = $(".slide3");
 const btn_prev = $(".prev");
 const btn_next = $(".next");
-let speed = 1000;
+let speed = 500;
 let enableClick = true;
 
-// $(".sldie1 li").last().prependTo(".slide1");
 
 btn_prev.on("click", function(e){
     e.preventDefault();
@@ -67,6 +68,7 @@ btn_prev.on("click", function(e){
         enableClick = false;
 
         act_prev(slide1);
+        act_prev2(slide3);
     }
     
 })
@@ -78,6 +80,7 @@ btn_next.on("click", function(e){
         enableClick = false;
 
         act_next(slide1);
+        act_next2(slide3);
     }   
 })
 
@@ -92,6 +95,22 @@ function act_prev(el){
 function act_next(el){
     el.children("ul").animate({ left : "-200%"}, speed, function(){
         $(this).css({ left: "-100%"});
+        $(this).children("li").first().appendTo(this);
+        enableClick = true;
+    });
+}
+
+function act_prev2(el){
+    el.children("ul").animate({ top : "0%"}, speed, function(){
+        $(this).css({ top: "-100%"});
+        $(this).children("li").last().prependTo(this);
+        enableClick = true;
+    });
+}
+
+function act_next2(el){
+    el.children("ul").animate({ top : "-200%"}, speed, function(){
+        $(this).css({ top: "-100%"});
         $(this).children("li").first().appendTo(this);
         enableClick = true;
     });

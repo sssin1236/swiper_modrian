@@ -198,6 +198,8 @@ font-family: 'Syncopate', sans-serif;
                                     
                                     .title{
                                         width: 100%; height: calc(100% * 3);
+                                        position: relative;
+                                        top: -100%;
 
                                         li{
                                             width: 100%; height: calc(100% / 3);
@@ -225,6 +227,8 @@ font-family: 'Syncopate', sans-serif;
 
                                     .sub_title{
                                         width: 100%; height: calc(100% * 3);
+                                        position: relative;
+                                        top: -100%;
 
                                         li{
                                             width: 100%; height: calc(100% / 3);

@@ -170,7 +170,9 @@ a {
                 overflow: hidden; }
                 #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article:nth-of-type(2) .slide2 .title {
                   width: 100%;
-                  height: calc(100% * 3); }
+                  height: calc(100% * 3);
+                  position: relative;
+                  top: -100%; }
                   #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article:nth-of-type(2) .slide2 .title li {
                     width: 100%;
                     height: calc(100% / 3);
@@ -193,7 +195,9 @@ a {
                 overflow: hidden; }
                 #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article:nth-of-type(2) .slide3 .sub_title {
                   width: 100%;
-                  height: calc(100% * 3); }
+                  height: calc(100% * 3);
+                  position: relative;
+                  top: -100%; }
                   #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article:nth-of-type(2) .slide3 .sub_title li {
                     width: 100%;
                     height: calc(100% / 3);
