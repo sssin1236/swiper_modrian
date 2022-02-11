@@ -357,6 +357,8 @@ a {
           height: 5%;
           background: #e6b120;
           border-top: 3px solid #111; }
+      #swiper .swiper-wrapper .swiper-slide[data-index="1"] .inner {
+        background: #131969; }
   #swiper .swiper-button-next {
     top: auto;
     right: auto;

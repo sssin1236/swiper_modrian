@@ -422,6 +422,12 @@ font-family: 'Syncopate', sans-serif;
                     }
                 }
             }
+
+            &[data-index="1"]{
+                .inner{
+                    background: #131969;
+                }
+            }
         }
     }
 
