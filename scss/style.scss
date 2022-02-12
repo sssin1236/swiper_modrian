@@ -428,6 +428,12 @@ font-family: 'Syncopate', sans-serif;
                     background: #131969;
                 }
             }
+
+            &[data-index="2"]{
+                .inner{
+                    background: #970717;
+                }
+            }
         }
     }
 
