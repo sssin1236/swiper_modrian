@@ -434,6 +434,12 @@ font-family: 'Syncopate', sans-serif;
                     background: #970717;
                 }
             }
+
+            &[data-index="3"]{
+                .inner{
+                    background: #e6b120;
+                }
+            }
         }
     }
 

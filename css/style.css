@@ -361,6 +361,8 @@ a {
         background: #131969; }
       #swiper .swiper-wrapper .swiper-slide[data-index="2"] .inner {
         background: #970717; }
+      #swiper .swiper-wrapper .swiper-slide[data-index="3"] .inner {
+        background: #e6b120; }
   #swiper .swiper-button-next {
     top: auto;
     right: auto;
