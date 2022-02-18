@@ -429,6 +429,11 @@ font-family: 'Syncopate', sans-serif;
 
                     .wrap{
                         width: 100%; 
+
+                        article{
+                            float: left;
+                            width: 33.333%;
+                        }
                     }
                 }
             }

@@ -361,6 +361,9 @@ a {
         background: #131969; }
         #swiper .swiper-wrapper .swiper-slide[data-index="1"] .inner .wrap {
           width: 100%; }
+          #swiper .swiper-wrapper .swiper-slide[data-index="1"] .inner .wrap article {
+            float: left;
+            width: 33.333%; }
       #swiper .swiper-wrapper .swiper-slide[data-index="2"] .inner {
         background: #970717; }
       #swiper .swiper-wrapper .swiper-slide[data-index="3"] .inner {
