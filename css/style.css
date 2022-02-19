@@ -360,10 +360,13 @@ a {
       #swiper .swiper-wrapper .swiper-slide[data-index="1"] .inner {
         background: #131969; }
         #swiper .swiper-wrapper .swiper-slide[data-index="1"] .inner .wrap {
-          width: 100%; }
+          width: 100%;
+          height: 100%; }
           #swiper .swiper-wrapper .swiper-slide[data-index="1"] .inner .wrap article {
             float: left;
-            width: 33.333%; }
+            width: 33.333%;
+            height: 100%;
+            border: 1px solid #fff; }
       #swiper .swiper-wrapper .swiper-slide[data-index="2"] .inner {
         background: #970717; }
       #swiper .swiper-wrapper .swiper-slide[data-index="3"] .inner {
