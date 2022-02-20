@@ -366,7 +366,9 @@ a {
             float: left;
             width: 33.333%;
             height: 100%;
-            border: 1px solid #fff; }
+            border: 1px solid #fff;
+            backdrop-filter: blur(2px);
+            background: rgba(238, 238, 238, 0.226); }
       #swiper .swiper-wrapper .swiper-slide[data-index="2"] .inner {
         background: #970717; }
       #swiper .swiper-wrapper .swiper-slide[data-index="3"] .inner {
