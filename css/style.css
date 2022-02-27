@@ -368,7 +368,10 @@ a {
             height: 100%;
             backdrop-filter: blur(2px);
             background: rgba(238, 238, 238, 0.226);
-            border-radius: 10px; }
+            border-radius: 10px;
+            margin-right: 10px; }
+            #swiper .swiper-wrapper .swiper-slide[data-index="1"] .inner .wrap article:last-child {
+              margin-right: 0; }
       #swiper .swiper-wrapper .swiper-slide[data-index="2"] .inner {
         background: #970717; }
       #swiper .swiper-wrapper .swiper-slide[data-index="3"] .inner {

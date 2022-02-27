@@ -436,7 +436,11 @@ font-family: 'Syncopate', sans-serif;
                             backdrop-filter: blur(2px);
                             background: rgba(238, 238, 238, 0.226);
                             border-radius: 10px;
-                            
+                            margin-right: 10px;
+
+                            &:last-child{
+                                margin-right: 0;
+                            }
                         }
                     }
                 }
