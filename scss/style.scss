@@ -432,10 +432,11 @@ font-family: 'Syncopate', sans-serif;
 
                         article{
                             float: left;
-                            width: 33.333%; height: 100%;
-                            border: 1px solid #fff;
+                            width: calc((100% - 20px) / 3); height: 100%;
                             backdrop-filter: blur(2px);
                             background: rgba(238, 238, 238, 0.226);
+                            border-radius: 10px;
+                            
                         }
                     }
                 }
