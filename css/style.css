@@ -372,6 +372,9 @@ a {
             margin-right: 10px; }
             #swiper .swiper-wrapper .swiper-slide[data-index="1"] .inner .wrap article:last-child {
               margin-right: 0; }
+            #swiper .swiper-wrapper .swiper-slide[data-index="1"] .inner .wrap article h2 {
+              font: bold 24px/1 'arial';
+              color: #eee; }
       #swiper .swiper-wrapper .swiper-slide[data-index="2"] .inner {
         background: #970717; }
       #swiper .swiper-wrapper .swiper-slide[data-index="3"] .inner {
