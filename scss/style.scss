@@ -454,6 +454,14 @@ font-family: 'Syncopate', sans-serif;
             &[data-index="2"]{
                 .inner{
                     background: #970717;
+
+                    .wrap{
+                        width: 100%;
+
+                        .pic{
+                            width: 50%; 
+                        }
+                    }
                 }
             }
 
